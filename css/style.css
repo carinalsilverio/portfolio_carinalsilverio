@@ -369,7 +369,8 @@ footer {
 footer p {
   color: #fff;
   font-size: 12px;
-  margin-left: 710px;
+  text-align: center;
+  width: 100%;
 }
 
 /*Estilo para Tablets*/
@@ -395,5 +396,7 @@ footer p {
     text-align: center;
     margin-bottom: 2px;
     padding: -200px 0 400px 0;
+  }
+  .footer {
   }
 }
