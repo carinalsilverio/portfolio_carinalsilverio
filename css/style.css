@@ -335,7 +335,8 @@ header {
 }
 
 /*Botão-Topo*/
-#btnTop {
+/*#btnTop {
+  display: block;
   position: fixed;
   bottom: 150px;
   right: 130px;
@@ -348,14 +349,14 @@ header {
   opacity: 50%;
   border: none;
   border-radius: 20%;
-}
+}*/
 
-#btnTop:hover {
+/*#btnTop:hover {
   width: 125px;
   transition-duration: 1.5s, 1.5s;
   opacity: 100%;
   border-radius: 0%;
-}
+}*/
 
 /*Rodapé*/
 footer {
@@ -434,5 +435,8 @@ footer p {
   }
   .imagem-projetos-realizados {
     min-height: 179px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
