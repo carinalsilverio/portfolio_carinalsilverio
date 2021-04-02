@@ -260,20 +260,9 @@ header {
   text-align: center;
 }
 
-.imagem-projetos-realizados {
-  width: 275px;
-  height: 179px;
-  margin-left: 37px;
-  max-height: 229px;
-  border: 4px solid #000000;
-  transition-duration: 0.5s, 1.5s;
-  transition-timing-function: ease-out;
-  display: block;
-}
-
-.imagem-projetos-realizados:hover {
-  width: 295px;
-  height: auto;
+.card-img-projetos {
+  width: 100%;
+  height: 100%;
 }
 
 .legenda {
@@ -286,11 +275,50 @@ header {
   background: #000;
 }
 
+.card {
+  border-color: #000;
+  border-width: 2px;
+  margin-left: 35px;
+}
+.card-titulo {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  background: #000;
+}
+
+.btn {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  width: 150px;
+  background: #000;
+  border: #000;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  width: 275px;
+  background: #242236;
+  border-color: #000;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
 /*Contato*/
 .contato {
   max-width: 750px;
   margin: 0 auto;
-  height: 320px;
+  height: 300px;
   border: none;
   border-radius: 20px;
   background-color: #6c63ff;
