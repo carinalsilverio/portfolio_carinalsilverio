@@ -461,7 +461,7 @@ footer p {
     grid-template-columns: repeat(1, 1fr);
     max-width: 100%;
   }
-  .imagem-projetos-realizados {
+  .icard-img-projetos {
     min-height: 179px;
   }
   body {
