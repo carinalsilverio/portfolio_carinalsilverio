@@ -442,8 +442,15 @@ footer p {
     margin-top: 35px;
   }
 
+  .conhecimentos,
+  .sobre,
+  .projetos,
+  .contato {
+    max-width: 350px;
+  }
+
   .conhecimentos {
-    max-width: 576px;
+    /*max-width: 355px;*/
     max-height: 355px;
   }
 
@@ -463,7 +470,7 @@ footer p {
     margin-left: 140px;
   }
   .sobre {
-    max-width: 100%;
+    /*max-width: 100%;*/
     height: 355px;
     margin-top: -150px;
   }
