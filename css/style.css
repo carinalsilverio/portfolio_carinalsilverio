@@ -475,7 +475,8 @@ footer p {
     min-height: 179px;
   }
 
-  /*body {
+  html,
+  body {
     overflow-x: hidden;
-  }*/
+  }
 }
