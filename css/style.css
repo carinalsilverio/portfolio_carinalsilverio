@@ -108,6 +108,7 @@ header {
   top: 0;
   padding: 15px 0;
   background-color: #242236;
+  height: 100px;
   width: 100%;
   z-index: 10; /*para que o corpo do site não fique por cima do cabeçalho ao descer a página*/
 }
@@ -134,12 +135,21 @@ header {
 }
 
 .header_menu ul li a:hover {
-  color: #000;
+  color: #6c63ff;
 }
 
 .logo {
   padding: 7px;
   max-width: 100%;
+  height: 100px;
+  position: relative;
+  padding: 0.3rem;
+}
+
+.logo:hover {
+  text-decoration: none;
+  opacity: 0.5;
+  /*color: #000000;*/
 }
 
 .header a {
@@ -150,14 +160,13 @@ header {
 }
 
 .header a:hover {
-  background-color: #01f9c6;
+  height: 90px;
   text-decoration: none;
-  color: #000000;
+  opacity: 0.5;
 }
 
 .header a:active {
   text-decoration: none;
-  color: #000000;
   position: relative;
   top: 8px;
 }
@@ -210,7 +219,7 @@ header {
   border-radius: 20px;
   margin-top: 40px;
   background-color: #6c63ff;
-  color: #ffffff;
+  color: #fff;
 }
 
 .imagem-conhecimentos {
@@ -319,11 +328,11 @@ header {
 .contato {
   max-width: 750px;
   margin: 0 auto;
-  height: 300px;
+  height: 245px;
   border: none;
   border-radius: 20px;
   background-color: #6c63ff;
-  color: #ffffff;
+  color: #fff;
   display: block;
   text-align: center;
   margin-bottom: 35px;
@@ -331,61 +340,31 @@ header {
   margin-top: -360px;
 }
 
-.icones {
-  width: 30px;
-  height: 30px;
-  margin-top: auto;
-  margin-left: auto;
-}
-
-.icones:hover {
+/*Redes Sociais*/
+.fa {
+  padding: 5px;
+  margin-top: 1rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #242236;
+  text-decoration: none;
   width: 40px;
   height: 40px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  border: 1px solid #fff4;
+  border-right: 1px solid #fff2;
+  border-bottom: 1px solid #fff2;
+  box-shadow: 0 5px 45px #fff2;
 }
 
-.btn-social {
-  width: 45px;
-  height: 45px;
-  border-radius: 20%;
-  margin-top: 20px;
-  box-shadow: 0 10px 0 #000000;
+.fa:hover {
+  transform: translateY(-10px);
+  opacity: 0.5;
 }
-
-.btn-social:hover {
-  width: 55px;
-  height: 55px;
-  transition-duration: 0.5s, 1.5s;
-}
-
-.btn-social:active {
-  position: relative;
-  top: 5px;
-  box-shadow: none;
-}
-
-/*Botão-Topo*/
-/*#btnTop {
-  display: block;
-  position: fixed;
-  bottom: 150px;
-  right: 130px;
-  width: 75px;
-  height: 75px;
-  font-size: 15px;
-  color: #ffffff;
-  font-weight: bolder;
-  background: #8b3175;
-  opacity: 50%;
-  border: none;
-  border-radius: 20%;
-}*/
-
-/*#btnTop:hover {
-  width: 125px;
-  transition-duration: 1.5s, 1.5s;
-  opacity: 100%;
-  border-radius: 0%;
-}*/
 
 /*Rodapé*/
 footer {
@@ -480,6 +459,10 @@ footer p {
   }
   .icard-img-projetos {
     min-height: 179px;
+  }
+
+  #btnTop {
+    display: none;
   }
 
   html,

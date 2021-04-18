@@ -1,7 +1,7 @@
 //Menu - Linkar menu ao campo correspondente
 
 const menuItems = document.querySelectorAll('.menu a');
-
+const detectMob = document.querySelectorAll('.btnTop');
 
 menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick);
@@ -45,23 +45,6 @@ const paragrafo = document.querySelector('p');
 typeWriter(paragrafo);
 
 
-//Btn-Topo
-//chamando a função ao rolar a tela.
-window.onscroll = function() {
-  scrollFunc();
-};
 
-//função para exibir o botão apenas depois de rolar a tela
-function scrollFunc() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("btnTop").style.display = "block";
-  } else {
-    document.getElementById("btnTop").style.display = "none";
-  }
-}
 
-function backtoTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
