@@ -1,7 +1,7 @@
 //Menu - Linkar menu ao campo correspondente
 
 const menuItems = document.querySelectorAll('.menu a');
-const detectMob = document.querySelectorAll('.btnTop');
+
 
 menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick);
@@ -16,11 +16,10 @@ function getScroolTopByHref(element) {
 
 function scrollToIdOnClick(event) {
   event.preventDefault(); 
-  const to = getScroolTopByHref(event.target) - 122; //valor para que o menu não fique cobrindo o título chamado no click
+  const to = getScroolTopByHref(event.target) - 110; //valor para que o menu não fique cobrindo o título chamado no click
     
   scroolToPositon(to);
 }
-
 
 function scroolToPositon(to) {
   window.scroll({ //não funciona em todos os navegadores
@@ -30,7 +29,7 @@ function scroolToPositon(to) {
 
 }
 
-//Animação - digitar cada letra automáticamente
+//Animação - digitar cada letra automaticamente
 
 function typeWriter(elemento) {
   const textoArray = elemento.innerHTML.split('');

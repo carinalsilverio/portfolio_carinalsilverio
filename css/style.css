@@ -86,6 +86,9 @@
 }
 
 /*Estilos*/
+body {
+  background-image: linear-gradient(to bottom, #ecdde8, #ebd3de, #e6bfda);
+}
 body,
 p {
   font-family: consolas, sans-serif;
@@ -101,87 +104,13 @@ img {
   max-width: 100%; /*para imagem fluir (aumentar ou diminuir tamanho) de acordo com o tamanho de tela*/
 }
 
-/*Cabeçalho*/
-
-header {
-  position: fixed;
-  top: 0;
-  padding: 15px 0;
-  background-color: #242236;
-  height: 100px;
-  width: 100%;
-  z-index: 10; /*para que o corpo do site não fique por cima do cabeçalho ao descer a página*/
-}
-
-.header_menu {
-  position: fixed;
-  text-align: right;
-}
-
-.header_menu ul li {
-  display: inline-block;
-  margin-left: 25px;
-  margin-top: 20px; /*centralizar o menu*/
-}
-
-.header_menu ul li a {
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 10px 0;
-}
-
-.header_menu ul li a:hover {
-  color: #6c63ff;
-}
-
-.logo {
-  padding: 7px;
-  max-width: 100%;
-  height: 100px;
-  position: relative;
-  padding: 0.3rem;
-}
-
-.logo:hover {
-  text-decoration: none;
-  opacity: 0.5;
-  /*color: #000000;*/
-}
-
-.header a {
-  text-decoration: none;
-  color: #000;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.header a:hover {
-  height: 90px;
-  text-decoration: none;
-  opacity: 0.5;
-}
-
-.header a:active {
-  text-decoration: none;
-  position: relative;
-  top: 8px;
-}
-.container {
-  width: 756px;
-  margin: 0 auto;
-}
-
 /*Quebra*/
 .imagem-quebra {
   max-width: 700px;
   margin: 0 auto;
   height: 380px;
-  margin-bottom: -40px;
-  margin-top: 135px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 /*Sobre*/
@@ -290,6 +219,7 @@ header {
   border-width: 2px;
   margin-left: 35px;
 }
+
 .card-titulo {
   color: #fff;
   font-size: 12px;
@@ -322,6 +252,7 @@ header {
   border-color: #000;
   border-radius: 5px;
   transition: 0.5s;
+  opacity: 0.5;
 }
 
 /*Contato*/
@@ -387,38 +318,18 @@ footer p {
 /*Estilo para Tablets*/
 
 @media only screen and (min-width: 788px) and (max-width: 979px) {
+  .imagem-quebra {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 /*Estilo para Smartphone*/
-@media only screen and (max-device-width: 576px) {
-  .header {
-    position: relative;
-  }
-
-  .logo {
-    margin-bottom: -110px;
-  }
-
-  .header_menu {
-    position: relative;
-    align-items: center;
-    display: flex;
-    flex-direction: center;
-  }
-
-  .menu {
-    height: 225px;
-  }
-
-  .header_menu ul li {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2px;
-    padding: -200px 0 400px 0;
-  }
-
+@media only screen and (min-device-width: 576px) and (max-width: 788px) {
   .imagem-quebra {
     margin-top: 35px;
+    margin-bottom: 70px;
+    max-width: 500px;
   }
 
   .conhecimentos,
@@ -429,8 +340,7 @@ footer p {
   }
 
   .conhecimentos {
-    /*max-width: 355px;*/
-    max-height: 355px;
+    max-height: 370px;
   }
 
   .imagem-conhecimentos {
@@ -449,24 +359,53 @@ footer p {
     margin-left: 140px;
   }
   .sobre {
-    /*max-width: 100%;*/
     height: 355px;
     margin-top: -150px;
   }
+
+  .card {
+    margin-left: 12.5rem;
+  }
+
   .projetos-realizados {
     grid-template-columns: repeat(1, 1fr);
     max-width: 100%;
-  }
-  .icard-img-projetos {
-    min-height: 179px;
+    margin-left: 0;
+    grid-gap: 20px;
   }
 
-  #btnTop {
-    display: none;
+  .icard-img-projetos {
+    min-height: 179px;
   }
 
   html,
   body {
     overflow-x: hidden;
+  }
+}
+
+/*@media (max-width: 700px) {
+  .js .menu_btn {/*
+    display: flex;
+    background: #222;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    align-items: center;
+    position: relative;
+    z-index: 300;*/
+
+@media (max-width: 576px) {
+  .card {
+    margin-left: 6.1rem;
+  }
+  .imagem-quebra {
+    margin-bottom: 60px;
   }
 }
