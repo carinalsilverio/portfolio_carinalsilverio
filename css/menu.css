@@ -40,6 +40,7 @@
 .navbar ul li a:hover {
   color: #6c63ff;
   opacity: 0.5;
+  padding: 5px;
 }
 
 .nav-link:focus {
@@ -73,12 +74,15 @@
 
 @media (max-width: 950px) {
   .logo {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-left: 0;
   }
   .img_hamburger {
     width: 25px;
     height: 25px;
   }
+}
+
+@media (max-width: 950px) {
 }
