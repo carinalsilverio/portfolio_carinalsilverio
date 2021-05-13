@@ -335,10 +335,10 @@ footer p {
 
 /*Estilo para Smartphone*/
 
-@media only screen and (min-device-width: 360px) and (max-width: 788px) {
+@media only screen and (min-device-width: 280px) and (max-width: 656px) {
   .imagem-quebra {
     margin-top: 35px;
-    margin-bottom: 70px;
+    margin-bottom: -200px;
     max-width: 500px;
   }
 
@@ -350,7 +350,7 @@ footer p {
   }
 
   .conhecimentos {
-    max-height: 370px;
+    max-height: 390px;
   }
 
   .imagem-conhecimentos {
@@ -369,17 +369,17 @@ footer p {
     margin-left: 140px;
   }
   .sobre {
-    height: 355px;
+    height: 440px;
     margin-top: -150px;
   }
 
   .card {
-    margin-left: 15rem;
+    margin-left: 0;
   }
 
   .projetos-realizados {
     grid-template-columns: repeat(1, 1fr);
-    max-width: 100%;
+    width: 100%;
     margin-left: 0;
     grid-gap: 20px;
   }
