@@ -16,7 +16,7 @@ function getScroolTopByHref(element) {
 
 function scrollToIdOnClick(event) {
   event.preventDefault(); 
-  const to = getScroolTopByHref(event.target) - 110; //valor para que o menu não fique cobrindo o título chamado no click
+  const to = getScroolTopByHref(event.target) - 5; //valor para que o menu não fique cobrindo o título chamado no click
     
   scroolToPositon(to);
 }
