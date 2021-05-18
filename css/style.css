@@ -369,7 +369,7 @@ footer p {
     margin-left: 140px;
   }
   .sobre {
-    height: 380px;
+    height: 440px;
     margin-top: -150px;
   }
 
@@ -417,5 +417,9 @@ footer p {
   }
   .imagem-quebra {
     margin-bottom: 0px;
+  }
+  .sobre {
+    height: 380px;
+    margin-top: -150px;
   }
 }
