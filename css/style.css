@@ -425,3 +425,22 @@ footer p {
     margin-top: -150px;
   }
 }
+
+@media only screen and (min-device-width: 540px) and (max-width: 540px) {
+  .card {
+    margin-left: 8rem;
+  }
+  .imagem-quebra {
+    margin-bottom: 70px;
+  }
+  .sobre {
+    height: 305px;
+    margin-top: -150px;
+  }
+  .conhecimentos,
+  .sobre,
+  .projetos,
+  .contato {
+    max-width: 525px;
+  }
+}
