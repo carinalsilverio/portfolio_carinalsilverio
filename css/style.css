@@ -117,18 +117,20 @@ img {
   margin-top: 40px;
 }
 
-/*Sobre*/
-
 .titulo {
   text-align: center;
   line-height: 90px;
   margin-bottom: -15px;
+  font-weight: bold;
+  font-size: 18px;
 }
+
+/*Sobre*/
 
 .sobre {
   max-width: 750px;
   margin: 10px auto;
-  height: 295px;
+  height: 280px;
   border: none;
   margin-top: 35px;
   border-radius: 20px;
